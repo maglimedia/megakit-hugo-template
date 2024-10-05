@@ -1,3 +1,5 @@
+git config --global user.email "david@maglimedia.com"
+  git config --global user.name "David"
 # Megakit
 
 Business template for Hugo. Browse through a [live demo](https://timely-land.cloudvent.net/). This theme has been adapted from the MIT licensed [Megakit Bootstrap template from Theme Fisher](https://github.com/themefisher/Megakit-Bootstrap-Agency-Template)
