@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@bookshop/browser": "3.2.1",
-    "@bookshop/generate": "3.2.1",
-    "@bookshop/hugo-engine": "3.2.1"
-  }
-}
