@@ -1,3 +1,12 @@
+data_config:
+  nav:
+    path: data/nav.yml
+  meta:
+    path: data/meta.yml
+  footer:
+    path: data/footer.yml
+  company:
+    path: data/company.yml
 collections_config:
   pages:
     sort_options: 
@@ -66,6 +75,7 @@ _structures:
 
 
 _inputs:
+
   description:
     description: Text used for the SEO meta description tag
   favicon:
