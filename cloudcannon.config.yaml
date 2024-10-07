@@ -22,8 +22,10 @@ collections_config:
         remove_extra_inputs: true
         icon: notes
   posts:
+    path: /content/posts
     icon: notes
     disable_url: false
+    description: ''
     sort_options:
       - key: title
       - key: title
