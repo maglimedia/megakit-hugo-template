@@ -1,25 +1,29 @@
-data_config:
-  nav:
-    path: data/nav.yml
-  meta:
-    path: data/meta.yml
-  footer:
-    path: data/footer.yml
-  company:
-    path: data/company.yml
+_schema: _schema
 collections_config:
   pages:
-    sort_options: 
+    icon: notes
+    disable_url: false
+    sort_options:
       - key: title
       - key: title
         order: desc
+    _enabled_editors:
+      - visual
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
     schemas:
       default:
         path: schemas/page.md
-    _enabled_editors:
-      - visual
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
   posts:
-    sort_options: 
+    icon: notes
+    disable_url: false
+    sort_options:
       - key: title
       - key: title
         order: desc
@@ -28,73 +32,57 @@ collections_config:
       - key: date
         order: desc
         label: Oldest first
-    schemas:
-      default:
-        path: schemas/post.md
     _enabled_editors:
       - content
       - visual
-    
-    _inputs: 
-      categories: 
+    _inputs:
+      categories:
         type: array
+        cascade: true
       categories[*]:
         type: text
-
-_structures: 
-  menu_items:
-    values: 
-      - label: "Link"
-        icon: link
-        value:
-          _id: "link"
-          name:
-          url: 
-          open_in_new_tab: false
-      - label: "Drop down menu"
-        icon: arrow_drop_down
-        value: 
-          _id: "drop_down_menu"
-          label: 
-          sub_menu_items: 
-
-  sub_menu_items: 
-    values:
-      - label: "Link"
-        icon: link
-        value: 
-          _id: "sub_menu_link"
-          name:
-          url: 
-          open_in_new_tab: false
-      - label: "Divider"
-        icon: maximize
-        description: "Straight line divider"
-        value:
-          _id: "sub_menu_divider"
-
-
+        cascade: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/post.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
 _inputs:
-
   description:
+    type: auto
+    cascade: true
     description: Text used for the SEO meta description tag
   favicon:
     type: image
-  logo_dark: 
+    cascade: true
+  logo_dark:
     type: image
+    cascade: true
   logo_light:
     type: image
-  sub_menu_items: 
+    cascade: true
+  sub_menu_items:
     type: array
-    comment: Sub nav links which will appear in a dropdown menu when hovering over the parent label. If no sub menu items are present there will be no dropdown menu. 
     options:
       structures: _structures.sub_menu_items
-
+    comment: >-
+      Sub nav links which will appear in a dropdown menu when hovering over the
+      parent label. If no sub menu items are present there will be no dropdown
+      menu.
+    cascade: true
   content:
     type: markdown
+    cascade: true
   icon:
     type: select
-    options: 
+    options:
+      allow_empty: true
       values:
         ti-wand: Wand
         ti-volume: Volume
@@ -448,3 +436,46 @@ _inputs:
         ti-css3: Css3
         ti-rss: Rss
         ti-rss-alt: Rss-Alt
+    cascade: true
+_structures:
+  menu_items:
+    style: select
+    values:
+      - icon: link
+        label: Link
+        value:
+          _id: link
+          name:
+          url:
+          open_in_new_tab: false
+      - icon: arrow_drop_down
+        label: Drop down menu
+        value:
+          _id: drop_down_menu
+          label:
+          sub_menu_items:
+  sub_menu_items:
+    style: select
+    values:
+      - icon: link
+        label: Link
+        value:
+          _id: sub_menu_link
+          name:
+          url:
+          open_in_new_tab: false
+      - label: Divider
+        icon: maximize
+        description: Straight line divider
+        value:
+          _id: sub_menu_divider
+data_config:
+  nav:
+    path: data/nav.yml
+  meta:
+    path: data/meta.yml
+  footer:
+    path: data/footer.yml
+  company:
+    path: data/company.yml
+timezone: America/New_York
