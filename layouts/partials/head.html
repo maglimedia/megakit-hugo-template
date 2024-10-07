@@ -73,7 +73,7 @@
  <!-- Main Stylesheet -->
  <link rel="stylesheet" href="/css/style.css">
 
- {{ $style := resources.Get "/scss/style.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+ {{ $style := resources.Get "/scss/style.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
  <link rel="stylesheet" href="{{ $style.Permalink }}" />
  
  <!--Favicon-->
