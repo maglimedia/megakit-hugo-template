@@ -2,8 +2,10 @@ _schema: _schema
 source: /
 collections_config:
   pages:
+    path: /content
     icon: notes
     disable_url: false
+    description: ''
     sort_options:
       - key: title
       - key: title
