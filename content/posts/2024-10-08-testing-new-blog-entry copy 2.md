@@ -1,10 +1,10 @@
 ---
 _schema: default
-date: 2024-10-08T21:00:00-04:00
+date: 2024-10-07T21:00:00-04:00
 title: Testing new blog entry
 description: Testing new blog entry
 categories:
-  - Testing
+  - Creativity
 image_path: >-
   https://res.cloudinary.com/maglimedia/image/upload/v1668436026/cld-sample-4.jpg
 author: David

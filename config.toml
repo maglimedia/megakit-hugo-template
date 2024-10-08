@@ -1,9 +1,12 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Megakit"
-pagination.pagerSize = 20
-pagination.path = "/"
 summaryLength = 10
+
+[pagination]
+disableAliases= false
+pagerSize= 2
+path= '/'
 
 [taxonomies]
 category = "categories"
@@ -22,3 +25,4 @@ path = 'local/component-library'
 
 [[module.imports]]
 path = 'github.com/cloudcannon/bookshop/hugo/v3'
+
