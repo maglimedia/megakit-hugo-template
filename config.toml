@@ -2,6 +2,7 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Megakit"
 summaryLength = 10
+copyright = '© 2023 ABC Widgets, Inc.'
 
 [pagination]
 disableAliases= false
