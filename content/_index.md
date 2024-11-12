@@ -97,5 +97,5 @@ content_blocks:
     preheading: Our Services
     heading: We provide a wide range of creative services
     content: 'Have any project on mind? For immidiate support:'
-    phone: +23 876 65 455
+    phone: +01 779 757 3383
 ---

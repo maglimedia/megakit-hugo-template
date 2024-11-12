@@ -13,14 +13,14 @@ content_blocks:
     preheading: "We are Professionals"
     heading: "Don’t Hesitate to contact with us for any kind of information"
     form_heading: "Contact Form"
-    address: "North Main Street, Brooklyn, Australia"
-    email: contact@mail.com 
-    phone: +88 01672 506 744 
-    facebook: themefisher
-    twitter: themefisher
-    linkedin: themefisher
+    address: "North Main Street, Atlanta, USA"
+    email: contact@akimovo.com 
+    phone: +01 770 757 3383 
+    facebook: akimovo
+    twitter: akimovo
+    linkedin: akimovo
   - _bookshop_name: "map"
     latitude: 40.712776
     longitude: -74.005974
-    name: "Megakit"
+    name: "akimovo"
 ---

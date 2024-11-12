@@ -1,25 +1,30 @@
 menu_items:
   - _id: link
-    name: Pricing
-    url: /pricing/
-    open_in_new_tab: false
-  - _id: link
-    name: Blog
+    name: Market Insights
     url: /blog/
     open_in_new_tab: false
+  - _id: drop_down_menu
+    label: Investors
+    sub_menu_items:
+      - _id: sub_menu_link
+        name: Why Akimovo
+        url: /about/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: Products
+        url: /services/
   - _id: drop_down_menu
     label: Company
     sub_menu_items:
       - _id: sub_menu_link
-        name: About
-        url: /about/
-        open_in_new_tab: false
+        name: Metrics
+        url: /services/
       - _id: sub_menu_link
-        name: Services
+        name: Team
         url: /services/
         open_in_new_tab: false
       - _id: sub_menu_link
-        name: Portfolio
+        name: Media Kit
         url: /portfolio/
         open_in_new_tab: false
   - _id: link
